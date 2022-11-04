@@ -24,7 +24,7 @@ class Register extends Component {
 
     onSubmitRegister = () => {
         const { onRouteChange, loadUser } = this.props;
-        fetch('http://localhost:3000/register', {
+        fetch('https://smart-brain-api-e4vd.onrender.com/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

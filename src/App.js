@@ -149,7 +149,7 @@ class App extends Component {
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input });
     // TODO add calling api here
-    fetch("http://localhost:3000/imageurl", {
+    fetch("https://smart-brain-api-e4vd.onrender.com/imageurl", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -161,7 +161,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch("http://localhost:3000/image", {
+          fetch("https://smart-brain-api-e4vd.onrender.com/image", {
             method: "PUT",
             headers: {
               "Content-Type": "application/json"
